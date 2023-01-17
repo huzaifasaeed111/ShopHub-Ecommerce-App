@@ -7,6 +7,7 @@ import ProductDetailPage from './Pages/ProductDetailPage.vue';
 import AllProducts from './components/AllProducts.vue';
 import AccountPage from './Pages/AccountPage.vue';
 import CartPage from './Pages/CartPage.vue';
+import dummyCart from './components/dummyCart.vue';
 const routes = [
     {
       name: 'HomePage',
@@ -47,6 +48,11 @@ const routes = [
         name: 'CartPage',
         path:'/CartPage',
         component:CartPage
+    },
+    {
+        name: 'dummyCart',
+        path:'/dummyCart',
+        component:dummyCart
     }
 ];
 
