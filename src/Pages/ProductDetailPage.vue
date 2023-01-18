@@ -13,9 +13,9 @@
                 <h3>{{ProductDetail.price}}</h3>
                 <p>{{ProductDetail.description}}</p>
                 <div class="text-center">
-                    <router-link to="/AccountPage">
-                        <button class="cart-btn" @click="AddToCart">Add To Cart</button>
-                    </router-link>
+                
+                        <button class="cart-btn" @click="AddToCart()" >Add To Cart</button>
+                
                 </div>
             </div>
         </div>
@@ -27,13 +27,12 @@
    export default{
      
      props:['id'],
-     methods:{
-         AddTOCart(){
-              this.$store.dispatch('addProductToCart',{
-                ProductDetail:this.ProductDetail
-            })
-         }
+     data(){
+       return{
+        quantity:1,
+       }
      },
+    
      computed:{
          ProductDetail(){
              return this.$store.state.SingleProduct;
@@ -43,6 +42,11 @@
         console.log(this.$route.params.id);
         
         this.$store.dispatch('GetSingleProduct',this.$route.params.id);
+     },
+     methods:{
+        AddToCart(){
+             this.$store.dispatch('AddToCart',{product:this.ProductDetail, quantity:this.quantity});
+        }
      }
    }
 </script>
@@ -53,9 +57,11 @@
         color: rgb(110, 84, 50);
         padding: 5px;
         width: 300px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
      }
      .cart-btn:hover{
-        background-color: rgb(209, 186, 157);
+        background-color: rgb(209, 198, 185);
         color: black;
      }
      .container-styling{

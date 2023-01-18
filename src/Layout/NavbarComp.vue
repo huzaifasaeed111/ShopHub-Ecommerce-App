@@ -9,20 +9,20 @@
             <div class="col-6 text-center mt-2 nav-menu p-3 mb-2">
                 <li  class="d-inline p-3"><router-link to="/"><a href="#">Home</a></router-link></li>
                 <li  class="d-inline p-3"><router-link to="/CollectionPage"><a href="#">Collections</a></router-link></li>
-                <li  class="d-inline p-3"><router-link to="/AboutPage"><a href="#">About Us</a></router-link></li>
-                <li  class="d-inline p-3"><router-link to="/ContactPage"><a href="#">Contact Us</a></router-link></li>
+                <li  class="d-inline p-3"><router-link to="/AboutPage"><a href="#">About</a></router-link></li>
+                <li  class="d-inline p-3"><router-link to="/ContactPage"><a href="#">Contact</a></router-link></li>
             </div>
             <!-- ############################## Navbar Icons ############################# -->
             <div class="col-3 icons-width p-3">
                 <div class="row mb-2">
                     <div class="col-6 mt-2">
-                      <router-link  to="/AccountPage">
+                      <router-link class="icon-route" to="/AccountPage">
                         <i class="fa-regular fa-user icon-color"></i>&nbsp;
                         <a href="#" class="account">Login</a>
                       </router-link>
                     </div>
                     <div class="col-6 mt-2">
-                      <router-link  to="/CartPage">
+                      <router-link class="icon-route" to="/CartPage">
                         <i class="fa-solid fa-cart-shopping icon-color"></i>&nbsp;
                          <a href="#" class="cart">Cart</a>
                       </router-link>
@@ -68,6 +68,9 @@
   .icon-color{
     color:#b8ae86;
     font-weight: bold;
+  }
+  .icon-route{
+     text-decoration: none;
   }
   @media screen and (max-width: 870px){
    .nav-menu li a{
