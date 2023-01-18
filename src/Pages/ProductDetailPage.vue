@@ -13,8 +13,9 @@
                 <h3>{{ProductDetail.price}}</h3>
                 <p>{{ProductDetail.description}}</p>
                 <div class="text-center">
-                
+                    <router-link to="/CartPage">
                         <button class="cart-btn" @click="AddToCart()" >Add To Cart</button>
+                    </router-link>
                 
                 </div>
             </div>

@@ -38,9 +38,14 @@
             <div class="text-center">
                  <p class="h3">Total: ${{cartTotalPrice}}</p>
             </div>
-            <div class="card-body text-center">
+            <div class="card-body text-center mb-3">
               <button type="button" class="pay-btn btn-block btn-lg">Proceed to Pay</button>
             </div>
+            <router-link to="/CollectionPage">
+            <div class="card-body text-center">
+              <button type="button" class="pay-btn btn-block btn-lg">Back to Product Page add more</button>
+            </div>
+          </router-link>
           </div>
   
         </div>
@@ -73,5 +78,7 @@
       background-color: white;
       border: 2px solid black;
       color:rgb(138, 107, 66);
+      padding:10px;
+      border-radius: 30px;
    }
 </style>
