@@ -8,6 +8,7 @@ import AllProducts from './components/AllProducts.vue';
 import AccountPage from './Pages/AccountPage.vue';
 import CartPage from './Pages/CartPage.vue';
 import CategoryPage from './Pages/CategoryPage';
+import okPage from './Pages/okPage.vue';
 
 const routes = [
     {
@@ -54,6 +55,11 @@ const routes = [
         name: 'CategoryPage',
         path:'/CategoryPage/:id',
         component:CategoryPage 
+    },
+    {
+        name: 'okPage',
+        path:'/okPage',
+        component:okPage
     }
 ];
 

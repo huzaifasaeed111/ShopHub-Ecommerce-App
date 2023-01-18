@@ -38,12 +38,14 @@
             <div class="text-center">
                  <p class="h3">Total: ${{cartTotalPrice}}</p>
             </div>
+            <router-link to="/okPage">
             <div class="card-body text-center mb-3">
               <button type="button" class="pay-btn btn-block btn-lg">Proceed to Pay</button>
             </div>
+          </router-link>
             <router-link to="/CollectionPage">
             <div class="card-body text-center">
-              <button type="button" class="pay-btn btn-block btn-lg">Back to Product Page add more</button>
+              <button type="button" class="pay-btn btn-block btn-lg">add more</button>
             </div>
           </router-link>
           </div>
